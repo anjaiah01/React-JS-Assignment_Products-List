@@ -8,15 +8,15 @@ import cart from '../assets/cart.svg';
 
 const Navbar = () => {
   return (
-    <div className='flex flex-col w-full'>
-        <div className='flex justify-between'>
+    <div className='flex flex-col w-full p-4'>
+        <div className='flex justify-between items-center'>
             <img src={logo} alt="logo" />
-            <p className='text-gray-900 text-5xl font-medium ml-48'>LOGO</p>
-            <div className='flex flex-row justify-between gap-5'>
-                <img src={search} />
-                <img src={love} />
-                <img src={cart} />
-                <img src={profile} />
+            <p className='text-gray-900 text-4xl font-bold ml-48'>LOGO</p>
+            <div className='flex flex-row justify-between gap-5 items-center'>
+                <img className='w-5 h-5' src={search} />
+                <img className='w-5 h-5' src={love} />
+                <img className='w-5 h-5' src={cart} />
+                <img className='w-5 h-5' src={profile} />
                 <div className='flex flex-row items-center gap-2 text-2xl'>
                     <p>ENG</p>
                     <img src={hover}/>

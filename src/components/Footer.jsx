@@ -4,8 +4,8 @@ import instagram from '../assets/instagram.svg'
 import linkedin from '../assets/linkedin.svg'
 const Footer = () => {
   return (
-    <div className='flex flex-col bg-black text-white'>
-        <div className='flex flex-row justify-between p-5'>
+    <div className='flex flex-col bg-black text-white p-20 mt-10'>
+        <div className='flex flex-row justify-between'>
             <div className='flex flex-col gap-4'>
                 <p className='font-bold'>BE THE FIRST TO KNOW</p>
                 <p>Sign up for updates from mettā muse.</p>
@@ -27,11 +27,11 @@ const Footer = () => {
                 <p className='text-xs'>Transactions will be completed in Euros and a currency reference is available on hover.</p>
             </div>
         </div>
-        <hr className='w-full '/>
-        <div>
-            <div>
-                <p>mettā muse</p>
-                <ul className='flex flex-col gap-2'>
+        <hr className='w-full mt-3'/>
+        <div className='flex flex-row justify-between mt-5'>
+            <div className='flex flex-col gap-4'>
+                <p className='text-xl font-semibold'>mettā muse</p>
+                <ul className='flex flex-col gap-3'>
                     <li>About Us</li>
                     <li>Stories</li>
                     <li>Artisians</li>
@@ -40,9 +40,9 @@ const Footer = () => {
                     <li>EU Compliances Docs</li>
                 </ul>
             </div>
-            <div>
-                <p>QUICK LINKS</p>
-                <ul>
+            <div className='flex flex-col gap-4'>
+                <p className='text-xl font-semibold'>QUICK LINKS</p>
+                <ul className='flex flex-col gap-3'>
                     <li>Orders&Shipping</li>
                     <li>Join/Login as a Seller</li>
                     <li>Payment&Pricing</li>
@@ -52,15 +52,15 @@ const Footer = () => {
                     <li>Terms & Conditions</li>
                 </ul>
             </div>
-            <div>
-                <p>FOLLOW US</p>
-                <div>
+            <div className='flex flex-col gap-4'>
+                <p className='text-xl font-semibold'>FOLLOW US</p>
+                <div className='flex flex-row gap-4'>
                     <img src={instagram} alt=""/>
                     <img src={linkedin} alt=""/>
                 </div>
             </div>
         </div>
-        <p className='text-center'>Copyright © 2023 mettamuse. All rights reserved.</p>
+        <p className='text-center mt-10'>Copyright © 2023 mettamuse. All rights reserved.</p>
     </div>
   )
 }
