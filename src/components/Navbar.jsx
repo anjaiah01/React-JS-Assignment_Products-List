@@ -8,7 +8,7 @@ import cart from '../assets/cart.svg';
 
 const Navbar = () => {
   return (
-    <div className='flex flex-col max-w-screen w-full'>
+    <div className='flex flex-col w-full'>
         <div className='flex justify-between'>
             <img src={logo} alt="logo" />
             <p className='text-gray-900 text-5xl font-medium ml-48'>LOGO</p>

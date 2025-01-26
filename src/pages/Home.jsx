@@ -79,7 +79,7 @@ const Home = () => {
                     
                 </div>
                 {/* right side producsts showing */}
-                <div className='flex flex-row flex-wrap gap-10 basis-8/10 mr-0'>
+                <div className='flex flex-row flex-wrap gap-10 w-full bg-red-200/30 ml-5'>
                     {products.map((product) => (
                         <div key={product.id} className='shadow-lg'>
                             <img className='w-50 h-60 mb-5' src={product.image} alt="" />
